@@ -1,6 +1,6 @@
 ' Hello,
 '------------------------------------------------------------------------------------
-' This VB SCRIPT DOWNLOADS A YOUTUBE VIDEO AFTER ITS URL IS COPIED INTO THE CLIPBOARD
+' This VB SCRIPT DOWNLOADS A YOUTUBE VIDEO After Its Url is Copied Into the ClipboaRD
 '---------------------------------------------------------------------------------------
 ' Please make sure youtube-dl is in the PATH
 ' You may also use yt-dlp, if you like but change youtube-dl below to it in the code.
