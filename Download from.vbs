@@ -41,7 +41,10 @@ Set WshShell = CreateObject("WScript.Shell")
 MsgBox "Downloading " & text 
 'REPLACE c:\users\my\downloads\youtube-dl.exe with your PATH
 'WshShell.Run "cmd /c title Download & set path=%path%;c:\users\my\downloads\&color 20 & mode 30,40 & echo Checking YOUTUBE-DL EXISTS... & echo off & youtube-dl --version 2>NUL&&echo FOUNDexe || echo NOT FOUNDexe & timeout 20 & exit"
+'it would be better to add path (to youtube-dl) to environment variable. the code below adds it on the fly
 WshShell.Run "cmd /c title Download & set path=%path%;c:\users\my\downloads& color 20 & mode 30,40 & echo Downloading now... & echo off & youtube-dl -f bestaudio " & text , 1 
+'the code below uses direct address of youtube-dl exe file
+'WshShell.Run "cmd /c title Download &color 20 & mode 30,40 & echo Downloading now... & echo off & c:\users\anil\hello\download\youtube-dl.exe -f bestaudio " & text , 1 
 Set WshShell = Nothing 
 Else 
 MsgBox "URL copied appears to be Invalid." 
