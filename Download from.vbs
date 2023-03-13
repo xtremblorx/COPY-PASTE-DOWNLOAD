@@ -39,6 +39,8 @@ hell=text
 if x = 0 Then 
 Set WshShell = CreateObject("WScript.Shell") 
 MsgBox "Downloading " & text 
+'In Order, to use any Code below Please remove the apostrophe ' before the line
+' Also Add the Apostrophe to remove extra code. Thank you
 'REPLACE c:\users\my\downloads\youtube-dl.exe with your PATH
 'WshShell.Run "cmd /c title Download & set path=%path%;c:\users\my\downloads\&color 20 & mode 30,40 & echo Checking YOUTUBE-DL EXISTS... & echo off & youtube-dl --version 2>NUL&&echo FOUNDexe || echo NOT FOUNDexe & timeout 20 & exit"
 'it would be better to add path (to youtube-dl) to environment variable. the code below adds it on the fly
